@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: python-pod
+  label:
+    event: ghw
+spec:
+  containers:
+  - name: node
+    image: python
+    ports:
+    - containerPort: 8080
